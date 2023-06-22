@@ -74,7 +74,7 @@ class _CartPageState extends State<CartPage> {
                 icon: Icon(
                   Icons.payment,
                 ),
-                label: Text(' Pay Now  '))
+                label: Text('  Pay Now    '))
           ],
         ),
       ),

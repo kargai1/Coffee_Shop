@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => CoffeeShop(),
       builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: HomePage(),
       ),
     );

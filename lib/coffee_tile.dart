@@ -86,7 +86,7 @@ class _CoffeeTileState extends State<CoffeeTile> {
                           MaterialStatePropertyAll(Colors.blueGrey[200])),
                   onPressed: _onPressedsmall,
                   child: Text(
-                    'Small \n ${_coffee.smallPrice}',
+                    'Small \n ${_coffee.smallPrice} \$',
                     style: TextStyle(color: Colors.black),
                   )),
               ElevatedButton(
@@ -95,7 +95,7 @@ class _CoffeeTileState extends State<CoffeeTile> {
                           MaterialStatePropertyAll(Colors.blueGrey[200])),
                   onPressed: _onPressedmedium,
                   child: Text(
-                    'Medium \n ${_coffee.mediumPrice}',
+                    'Medium \n ${_coffee.mediumPrice} \$',
                     style: TextStyle(color: Colors.black),
                   )),
               ElevatedButton(
@@ -104,7 +104,7 @@ class _CoffeeTileState extends State<CoffeeTile> {
                           MaterialStatePropertyAll(Colors.blueGrey[200])),
                   onPressed: _onPressedlarge,
                   child: Text(
-                    'Large \n ${_coffee.largePrice}',
+                    'Large \n ${_coffee.largePrice} \$',
                     style: TextStyle(color: Colors.black),
                   ))
             ],

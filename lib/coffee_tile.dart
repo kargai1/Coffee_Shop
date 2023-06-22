@@ -33,7 +33,6 @@ class _CoffeeTileState extends State<CoffeeTile> {
     _onPressedmedium = widget.onPressedmedium;
     _onPressedsmall = widget.onPressedsmall;
     _coffee = widget.coffee;
-    // TODO: implement initState
     super.initState();
   }
 
@@ -43,7 +42,8 @@ class _CoffeeTileState extends State<CoffeeTile> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ExpansionTile(
-        collapsedBackgroundColor: Colors.grey,
+        collapsedBackgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blueGrey[300],
         title: Container(
           height: 100,
           width: MediaQuery.of(context).size.width,
@@ -83,7 +83,7 @@ class _CoffeeTileState extends State<CoffeeTile> {
               ElevatedButton(
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStatePropertyAll(Colors.grey[400])),
+                          MaterialStatePropertyAll(Colors.blueGrey[200])),
                   onPressed: _onPressedsmall,
                   child: Text(
                     'Small \n ${_coffee.smallPrice}',
@@ -92,7 +92,7 @@ class _CoffeeTileState extends State<CoffeeTile> {
               ElevatedButton(
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStatePropertyAll(Colors.grey[400])),
+                          MaterialStatePropertyAll(Colors.blueGrey[200])),
                   onPressed: _onPressedmedium,
                   child: Text(
                     'Medium \n ${_coffee.mediumPrice}',
@@ -101,7 +101,7 @@ class _CoffeeTileState extends State<CoffeeTile> {
               ElevatedButton(
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStatePropertyAll(Colors.grey[400])),
+                          MaterialStatePropertyAll(Colors.blueGrey[200])),
                   onPressed: _onPressedlarge,
                   child: Text(
                     'Large \n ${_coffee.largePrice}',

@@ -1,6 +1,4 @@
-import 'package:coffee/coffee_shop.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'models.dart';
 
 class CoffeeTile extends StatefulWidget {
@@ -26,7 +24,6 @@ class _CoffeeTileState extends State<CoffeeTile> {
   var _onPressedmedium;
   var _onPressedlarge;
 
-  var _Size;
   @override
   void initState() {
     _onPressedlarge = widget.onPressedlarge;
@@ -36,7 +33,6 @@ class _CoffeeTileState extends State<CoffeeTile> {
     super.initState();
   }
 
-  @override
   List bigOrSmall = ['small', 'medium', 'large'];
   Widget build(BuildContext context) {
     return Padding(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+// ignore: must_be_immutable
 class MyBottomNavBar extends StatelessWidget {
   void Function(int)? onTapChange;
 
@@ -9,7 +11,7 @@ class MyBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(25),
+      margin: const EdgeInsets.all(25),
       child: GNav(
         onTabChange: (value) => onTapChange!(value),
         color: Colors.grey[400],
@@ -17,7 +19,7 @@ class MyBottomNavBar extends StatelessWidget {
         tabBorderRadius: 25,
         tabBorder: Border.all(color: Colors.white),
         mainAxisAlignment: MainAxisAlignment.center,
-        tabs: [
+        tabs: const [
           GButton(
             icon: Icons.home,
             text: 'Shop',

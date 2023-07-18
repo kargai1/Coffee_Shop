@@ -16,13 +16,11 @@ class _ShopPageState extends State<ShopPage> {
     Provider.of<CoffeeShop>(context, listen: false).addItemToCart(coffee);
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (context) => const AlertDialog(
         title: Text('Successfully added to cart'),
       ),
     );
   }
-
-  var _price;
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +28,8 @@ class _ShopPageState extends State<ShopPage> {
       builder: (context, value, child) => SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(25.0),
+            const Padding(
+              padding: EdgeInsets.all(25.0),
               child: Center(
                   child: Text(
                 'Coffee From Heaven!',

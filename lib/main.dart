@@ -1,7 +1,5 @@
-import 'package:coffee/bottom_nav_bar.dart';
 import 'package:coffee/coffee_shop.dart';
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:provider/provider.dart';
 import 'home_page.dart';
 
